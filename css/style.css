@@ -1,0 +1,181 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box; /*IE*/
+	-webkit-box-sizing: border-box; /* Safari/Chrome*/
+    -moz-box-sizing: border-box;    /*Firefox*/
+}
+
+body {
+	color: #3a3a3a;
+	display: flex;
+	flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    background: grey;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* -------------------- Navigation -------------------- */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 25px 20px;
+    background: rgb(95, 95, 148);
+    flex: 0 1 48%;
+    text-align: center;
+    color: white;
+    border: 1px white solid;
+}
+
+/* -------------------- Content -------------------- */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 15px auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.cpuRPS,
+.score,
+.playerRPS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.cpuRock,
+.playerRock,
+.cpuPaper,
+.playerPaper,
+.cpuScissor,
+.playerScissor {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px white solid;
+}
+
+.cpuRock,
+.cpuPaper,
+.cpuScissor {
+    background: rgb(179, 92, 92);
+}
+
+
+.playerRock,
+.playerPaper,
+.playerScissor {
+    background: rgb(92, 165, 104);
+}
+
+.score {
+    background: #3a3a3a;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+}
+
+
+div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+div li {
+    display: inline-block;
+    padding: 0 20px;
+}
+/* -------------------- Footer -------------------- */
+
+footer {
+	background: #d9e4ea;
+	padding: 20px;
+	text-align: center;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* ================================= 
+Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+/* -------------------- Navigation -------------------- */
+nav {
+    width: 700px;
+    margin: 0 auto;
+    background: grey;
+    padding: 10px 10px 0 10px;
+    font-size: larger;
+}
+
+/* -------------------- Content -------------------- */
+body {
+    background: rgb(43, 42, 42);
+}
+
+header,
+main {
+    width: 700px;
+    margin: 0 auto;
+    background: grey;
+}
+
+main {
+    height: 100%;
+}
+
+p {
+    font-size: larger;
+}
+
+footer {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* -------------------- Footer -------------------- */
+}
+
+@media (min-width: 1025px) {
+/* -------------------- Navigation -------------------- */
+/* -------------------- Content -------------------- */
+/* -------------------- Footer -------------------- */
+}
